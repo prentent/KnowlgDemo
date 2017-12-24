@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="炫酷轮播图" />
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="Bitmap高效加载" />
+
+    <Button
+        android:id="@+id/btn_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="按钮涟漪效果" />
+
+
+</LinearLayout>
