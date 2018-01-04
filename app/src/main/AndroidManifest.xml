@@ -29,7 +29,7 @@
         <activity android:name=".ui.BannerActivity" />
         <activity android:name=".ui.BitmapActivity" />
         <activity android:name=".ui.RipplesActivity" />
-        <activity android:name=".ui.QxActivity"></activity>
+        <activity android:name=".ui.QxActivity" />
     </application>
 
 </manifest>

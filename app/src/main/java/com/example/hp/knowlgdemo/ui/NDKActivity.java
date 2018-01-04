@@ -29,7 +29,7 @@ public class NDKActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ndk);
-        TextView tv = (TextView) findViewById(R.id.tv);
-        tv.setText(getStringFromB());
+//        TextView tv = (TextView) findViewById(R.id.tv);
+//        tv.setText(getStringFromB());
     }
 }

@@ -15,9 +15,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.example.hp.knowlgdemo.fragment.FourFragment;
+import com.example.hp.knowlgdemo.fragment.KolitionF;
 import com.example.hp.knowlgdemo.fragment.OneFragment;
 import com.example.hp.knowlgdemo.fragment.ThreeFragment;
 import com.example.hp.knowlgdemo.fragment.TwoFragment;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
-
+//distributionUrl=https\://services.gradle.org/distributions/gradle-3.3-all.zip
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity
         fragmentList.add(new TwoFragment());
         fragmentList.add(new ThreeFragment());
         fragmentList.add(new FourFragment());
+        fragmentList.add(new KolitionF());
 
         getSupportFragmentManager()
                 .beginTransaction()
