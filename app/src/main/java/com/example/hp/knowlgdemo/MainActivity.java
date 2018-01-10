@@ -23,7 +23,9 @@ import com.example.hp.knowlgdemo.fragment.ThreeFragment;
 import com.example.hp.knowlgdemo.fragment.TwoFragment;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -38,6 +40,11 @@ public class MainActivity extends AppCompatActivity
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("UI模型");
         setSupportActionBar(toolbar);
+
+        int[] aa=new int[10];
+        aa[0]=0;
+        Map<String,String> map=new HashMap<>();
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +74,9 @@ public class MainActivity extends AppCompatActivity
                 .beginTransaction()
                 .add(R.id.fly, fragmentList.get(0))
                 .commit();
+
+
+
 
 
         RadioGroup rgp = (RadioGroup) findViewById(R.id.rgp);

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.knowlgdemo.ui.ChaJianActivity">
+
+    <Button
+        android:id="@+id/getdrawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:onClick="onClick_cj"
+        android:text="获取图片"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/gettext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:onClick="onClick_cj"
+        android:text="获取文字"
+        tools:ignore="OnClick" />
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/image4" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原文字" />
+
+    <EditText
+        android:id="@+id/edit"
+        android:background="@mipmap/image4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原文字" />
+
+</LinearLayout>
