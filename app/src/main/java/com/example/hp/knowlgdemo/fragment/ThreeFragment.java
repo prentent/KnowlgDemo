@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.hp.knowlgdemo.R;
 import com.example.hp.knowlgdemo.ui.AnmaitorActivity;
+import com.example.hp.knowlgdemo.ui.BootSheetActivity;
 import com.example.hp.knowlgdemo.ui.ChaJianActivity;
 
 /**
@@ -30,6 +31,7 @@ public class ThreeFragment extends Fragment implements View.OnClickListener {
     private void initView(View inflate) {
         inflate.findViewById(R.id.btn_jj).setOnClickListener(this);
         inflate.findViewById(R.id.btn_sx).setOnClickListener(this);
+        inflate.findViewById(R.id.btn_db).setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +42,9 @@ public class ThreeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_sx:
                 startActivity(new Intent(getContext(), AnmaitorActivity.class));
+                break;
+            case R.id.btn_db:
+                startActivity(new Intent(getContext(), BootSheetActivity.class));
                 break;
         }
     }

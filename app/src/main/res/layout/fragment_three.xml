@@ -17,4 +17,11 @@
         android:background="@drawable/shape_btn"
         android:text="属性动画" />
 
+    <Button
+        android:id="@+id/btn_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="底部动作条" />
+
 </LinearLayout>
