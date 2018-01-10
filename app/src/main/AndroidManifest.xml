@@ -44,6 +44,9 @@
         <activity android:name=".ui.TouchPullActivity" />
         <activity android:name=".ui.ChaJianActivity" />
         <activity android:name=".ui.AnmaitorActivity"></activity>
+        <activity android:name=".ui.QxActivity" />
+        <activity android:name=".ui.EoxperictionActivity" />
+        <activity android:name=".ui.TuXiangActivity"></activity>
     </application>
 
 </manifest>

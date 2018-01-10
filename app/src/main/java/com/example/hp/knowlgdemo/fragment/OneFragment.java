@@ -16,6 +16,7 @@ import com.example.hp.knowlgdemo.ui.NDKActivity;
 import com.example.hp.knowlgdemo.ui.RectActivity;
 import com.example.hp.knowlgdemo.ui.RipplesActivity;
 import com.example.hp.knowlgdemo.ui.TouchPullActivity;
+import com.example.hp.knowlgdemo.ui.TuXiangActivity;
 
 /**
  * Created by HP on 2017/12/22.
@@ -35,10 +36,6 @@ public class OneFragment extends BaseFragment implements View.OnClickListener {
         inflate.findViewById(R.id.btn_on).setOnClickListener(this);
         inflate.findViewById(R.id.btn_two).setOnClickListener(this);
         inflate.findViewById(R.id.btn_ly).setOnClickListener(this);
-        inflate.findViewById(R.id.btn_sy).setOnClickListener(this);
-        inflate.findViewById(R.id.btn_tool).setOnClickListener(this);
-        inflate.findViewById(R.id.btn_rect).setOnClickListener(this);
-        inflate.findViewById(R.id.btn_nx).setOnClickListener(this);
 
 
     }
@@ -54,17 +51,6 @@ public class OneFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.btn_ly:
                 openActivity(getContext(), null, RipplesActivity.class);
-                break;
-            case R.id.btn_sy:
-                openActivity(getContext(), null, IndexActivity.class);
-            case R.id.btn_tool:
-                openActivity(getContext(), null, CollapsingToolbarActivity.class);
-                break;
-            case R.id.btn_rect:
-                openActivity(getContext(), null, RectActivity.class);
-                break;
-            case R.id.btn_nx:
-                openActivity(getContext(), null, TouchPullActivity.class);
                 break;
             default:
                 break;

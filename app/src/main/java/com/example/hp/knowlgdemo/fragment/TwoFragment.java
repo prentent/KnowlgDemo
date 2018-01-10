@@ -32,7 +32,6 @@ public class TwoFragment extends BaseFragment implements View.OnClickListener {
 
     private void initView(View inflate) {
         inflate.findViewById(R.id.btn_qx).setOnClickListener(this);
-        inflate.findViewById(R.id.btn_xc).setOnClickListener(this);
     }
 
     @Override
@@ -41,9 +40,6 @@ public class TwoFragment extends BaseFragment implements View.OnClickListener {
             case R.id.btn_qx:
 //                preMission();
                 openActivity(getContext(), null, QxActivity.class);
-                break;
-            case R.id.btn_xc:
-                openActivity(getContext(), null, ThreadPoolActivity.class);
                 break;
             default:
                 break;

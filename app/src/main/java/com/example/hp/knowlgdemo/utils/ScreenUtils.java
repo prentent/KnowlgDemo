@@ -1,4 +1,5 @@
 package com.example.hp.knowlgdemo.utils;
+
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -8,6 +9,9 @@ import android.view.View;
 import android.view.WindowManager;
 /**
  * Created by HP on 2018/1/7.
+
+/**
+ * 获得屏幕相关的辅助类
  */
 
 public class ScreenUtils {
