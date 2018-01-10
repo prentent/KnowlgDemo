@@ -10,8 +10,8 @@ import com.example.hp.knowlgdemo.R;
 import com.example.hp.knowlgdemo.base.BaseFragment;
 import com.example.hp.knowlgdemo.ui.BannerActivity;
 import com.example.hp.knowlgdemo.ui.BitmapActivity;
-import com.example.hp.knowlgdemo.ui.NDKActivity;
 import com.example.hp.knowlgdemo.ui.RipplesActivity;
+import com.example.hp.knowlgdemo.ui.TuXiangActivity;
 
 /**
  * Created by HP on 2017/12/22.
@@ -31,6 +31,8 @@ public class OneFragment extends BaseFragment implements View.OnClickListener {
         inflate.findViewById(R.id.btn_on).setOnClickListener(this);
         inflate.findViewById(R.id.btn_two).setOnClickListener(this);
         inflate.findViewById(R.id.btn_ly).setOnClickListener(this);
+        inflate.findViewById(R.id.btn_zx).setOnClickListener(this);
+        inflate.findViewById(R.id.btn_tx).setOnClickListener(this);
 
 
     }
@@ -46,6 +48,9 @@ public class OneFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.btn_ly:
                 openActivity(getContext(), null, RipplesActivity.class);
+                break;
+            case R.id.btn_tx:
+                openActivity(getContext(), null, TuXiangActivity.class);
                 break;
             default:
                 break;

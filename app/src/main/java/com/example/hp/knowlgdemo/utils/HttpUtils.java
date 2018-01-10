@@ -22,6 +22,56 @@ public class HttpUtils {
         void onRequestComplete(String result);
     }
 
+    /**
+     * 下载数据
+     *
+     * @param path 网络地址
+     * @return 对应的字节数组
+     */
+    public static byte[] download(String path) {
+        byte[] ret = null;
+
+        try {
+            URL url = new URL(path);
+
+            HttpURLConnection conn = (HttpURLConnection)
+                    url.openConnection();
+
+            conn.setRequestMethod("GET");
+
+            conn.setConnectTimeout(10000);
+            conn.setReadTimeout(10000);
+
+            conn.connect();
+
+            //判断网络请求是否成功
+            if (conn.getResponseCode() ==
+                    HttpURLConnection.HTTP_OK) {
+
+                InputStream is = conn.getInputStream();
+
+                ByteArrayOutputStream bos = new ByteArrayOutputStream();
+
+                int len = 0;
+                byte[] buffer = new byte[512];
+
+                while (-1 != (len = is.read(buffer))) {
+                    bos.write(buffer, 0, len);
+                }
+
+                ret = bos.toByteArray();
+
+                is.close();
+                bos.close();
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return ret;
+    }
+
 
     /**
      * 异步的Get请求

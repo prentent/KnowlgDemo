@@ -30,6 +30,8 @@
         <activity android:name=".ui.BitmapActivity" />
         <activity android:name=".ui.RipplesActivity" />
         <activity android:name=".ui.QxActivity" />
+        <activity android:name=".ui.EoxperictionActivity" />
+        <activity android:name=".ui.TuXiangActivity"></activity>
     </application>
 
 </manifest>

@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity
         fragmentList.add(new TwoFragment());
         fragmentList.add(new ThreeFragment());
         fragmentList.add(new FourFragment());
-        fragmentList.add(new KolitionF());
+//        fragmentList.add(new KolitionF());
 
         getSupportFragmentManager()
                 .beginTransaction()
