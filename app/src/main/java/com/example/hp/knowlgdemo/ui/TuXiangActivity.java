@@ -1,14 +1,10 @@
 package com.example.hp.knowlgdemo.ui;
 
-import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.ImageView;
 
 import com.example.hp.knowlgdemo.R;
@@ -39,29 +35,6 @@ public class TuXiangActivity extends AppCompatActivity {
         img3.setImageBitmap(BitmapUtils.handleImagePixelsOldPhoto(bitmap));
         img4.setImageBitmap(BitmapUtils.handleImagePixelsRelife(bitmap));
 
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                Bitmap bitmap1 = BitmapUtils.handleImageNegative(bitmap);
-//                Message message = new Message();
-//                message.obj = bitmap1;
-//                message.what = 0;
-//                handler.sendMessage(message);
-//            }
-//        }).start();
-
-
     }
 
-    @SuppressLint("HandlerLeak")
-    private Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            Log.e("======", "sssss");
-            Bitmap obj = (Bitmap) msg.obj;
-            img1.setImageBitmap(obj);
-
-        }
-    };
 }
