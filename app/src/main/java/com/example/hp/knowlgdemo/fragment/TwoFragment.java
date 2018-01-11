@@ -13,7 +13,10 @@ import android.widget.Toast;
 
 import com.example.hp.knowlgdemo.R;
 import com.example.hp.knowlgdemo.base.BaseFragment;
+import com.example.hp.knowlgdemo.ui.MeshActivity;
 import com.example.hp.knowlgdemo.ui.QxActivity;
+import com.example.hp.knowlgdemo.ui.ReflectActivity;
+import com.example.hp.knowlgdemo.ui.RoundRectXfermodeActivity;
 import com.example.hp.knowlgdemo.ui.ThreadPoolActivity;
 
 /**
@@ -33,6 +36,9 @@ public class TwoFragment extends BaseFragment implements View.OnClickListener {
     private void initView(View inflate) {
         inflate.findViewById(R.id.btn_qx).setOnClickListener(this);
         inflate.findViewById(R.id.btn_xc).setOnClickListener(this);
+        inflate.findViewById(R.id.bitmapmesh).setOnClickListener(this);
+        inflate.findViewById(R.id.reflect).setOnClickListener(this);
+        inflate.findViewById(R.id.roundrectxfermode).setOnClickListener(this);
     }
 
     @Override
@@ -44,6 +50,15 @@ public class TwoFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.btn_xc:
                 openActivity(getContext(), null, ThreadPoolActivity.class);
+                break;
+            case R.id.bitmapmesh:
+                openActivity(getContext(), null, MeshActivity.class);
+                break;
+            case R.id.reflect:
+                openActivity(getContext(),null,ReflectActivity.class);
+                break;
+            case R.id.roundrectxfermode:
+                openActivity(getContext(),null,RoundRectXfermodeActivity.class);
                 break;
             default:
                 break;

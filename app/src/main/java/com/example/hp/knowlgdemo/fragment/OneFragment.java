@@ -13,6 +13,7 @@ import com.example.hp.knowlgdemo.ui.BingZhuangActivity;
 import com.example.hp.knowlgdemo.ui.BitmapActivity;
 import com.example.hp.knowlgdemo.ui.CollapsingToolbarActivity;
 import com.example.hp.knowlgdemo.ui.IndexActivity;
+import com.example.hp.knowlgdemo.ui.MatricActivity;
 import com.example.hp.knowlgdemo.ui.RectActivity;
 import com.example.hp.knowlgdemo.ui.RipplesActivity;
 import com.example.hp.knowlgdemo.ui.TouchPullActivity;
@@ -44,6 +45,7 @@ public class OneFragment extends BaseFragment implements View.OnClickListener {
         inflate.findViewById(R.id.btn_tx).setOnClickListener(this);
         inflate.findViewById(R.id.btn_bz).setOnClickListener(this);
         inflate.findViewById(R.id.btn_zx).setOnClickListener(this);
+        inflate.findViewById(R.id.btn_txM).setOnClickListener(this);
 
 
     }
@@ -80,6 +82,9 @@ public class OneFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.btn_zx:
                 openActivity(getContext(), null, ZheXianActivity.class);
+                break;
+            case R.id.btn_txM:
+                openActivity(getContext(), null, MatricActivity.class);
                 break;
             default:
                 break;

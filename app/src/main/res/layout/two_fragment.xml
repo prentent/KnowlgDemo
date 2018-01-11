@@ -18,5 +18,26 @@
         android:background="@drawable/shape_btn"
         android:text="线程池" />
 
+    <Button
+        android:id="@+id/bitmapmesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="BitmapMesh使用制作波纹效果" />
+
+    <Button
+        android:id="@+id/reflect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="倒影效果" />
+
+    <Button
+        android:id="@+id/roundrectxfermode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="圆角矩形" />
+
 
 </LinearLayout>
