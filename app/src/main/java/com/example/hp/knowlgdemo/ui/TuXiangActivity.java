@@ -29,7 +29,7 @@ public class TuXiangActivity extends AppCompatActivity {
         img2 = (ImageView) findViewById(R.id.img2);
         img3 = (ImageView) findViewById(R.id.img3);
         img4 = (ImageView) findViewById(R.id.img4);
-        final Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.image6);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.image6);
         img1.setImageBitmap(bitmap);
         img2.setImageBitmap(BitmapUtils.handleImageNegative(bitmap));
         img3.setImageBitmap(BitmapUtils.handleImagePixelsOldPhoto(bitmap));
