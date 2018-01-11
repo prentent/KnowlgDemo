@@ -26,6 +26,33 @@
         android:text="按钮涟漪效果" />
 
     <Button
+        android:id="@+id/btn_sy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="索引" />
+
+    <Button
+        android:id="@+id/btn_tool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="自动收缩toobar" />
+
+    <Button
+        android:id="@+id/btn_rect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="图表" />
+
+    <Button
+        android:id="@+id/btn_nx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="粘性下拉" />
+    <Button
         android:id="@+id/btn_zx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

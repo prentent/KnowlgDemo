@@ -31,8 +31,24 @@
         <activity android:name=".ui.BitmapActivity" />
         <activity android:name=".ui.RipplesActivity" />
         <activity android:name=".ui.QxActivity" />
+        <activity android:name=".KoilitionActivity" />
+        <activity android:name=".ui.ThreadPoolActivity" />
+        <activity android:name=".ui.IndexActivity" />
+        <activity
+            android:name=".ui.CollapsingToolbarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.RectActivity" />
+        <activity android:name=".ui.TouchPullActivity" />
+        <activity android:name=".ui.ChaJianActivity" />
+        <activity android:name=".ui.AnmaitorActivity" />
+        <activity android:name=".ui.QxActivity" />
         <activity android:name=".ui.EoxperictionActivity" />
-        <activity android:name=".ui.TuXiangActivity"></activity>
+        <activity android:name=".ui.TuXiangActivity" />
+        <activity android:name=".ui.BootSheetActivity"></activity>
     </application>
 
 </manifest>

@@ -13,8 +13,8 @@ import android.widget.Toast;
 
 import com.example.hp.knowlgdemo.R;
 import com.example.hp.knowlgdemo.base.BaseFragment;
-import com.example.hp.knowlgdemo.ui.EoxperictionActivity;
 import com.example.hp.knowlgdemo.ui.QxActivity;
+import com.example.hp.knowlgdemo.ui.ThreadPoolActivity;
 
 /**
  * Created by HP on 2017/12/22.
@@ -32,7 +32,6 @@ public class TwoFragment extends BaseFragment implements View.OnClickListener {
 
     private void initView(View inflate) {
         inflate.findViewById(R.id.btn_qx).setOnClickListener(this);
-        inflate.findViewById(R.id.btn_yc).setOnClickListener(this);
     }
 
     @Override
@@ -41,9 +40,6 @@ public class TwoFragment extends BaseFragment implements View.OnClickListener {
             case R.id.btn_qx:
 //                preMission();
                 openActivity(getContext(), null, QxActivity.class);
-                break;
-            case R.id.btn_yc:
-                openActivity(getContext(), null, EoxperictionActivity.class);
                 break;
             default:
                 break;
