@@ -9,7 +9,7 @@ import android.widget.Button;
  * Created by HP on 2017/12/24.
  */
 
-public class RippleButton extends Button {
+public class RippleButton extends android.support.v7.widget.AppCompatButton {
 
     private MyRippleDrawable rippleDrawable;
 
