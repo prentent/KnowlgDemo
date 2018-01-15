@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/shape_btn"
-        android:text="图像处理" />
+        android:text="图像颜色处理" />
 
     <Button
         android:id="@+id/btn_bz"
@@ -73,5 +73,11 @@
         android:background="@drawable/shape_btn"
         android:text="折线图" />
 
+    <Button
+        android:id="@+id/btn_txM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="图像变换" />
 
 </LinearLayout>
