@@ -18,6 +18,7 @@ import com.example.hp.knowlgdemo.ui.QxActivity;
 import com.example.hp.knowlgdemo.ui.ReflectActivity;
 import com.example.hp.knowlgdemo.ui.RoundRectXfermodeActivity;
 import com.example.hp.knowlgdemo.ui.ThreadPoolActivity;
+import com.example.hp.knowlgdemo.ui.VideoviewActivity;
 
 /**
  * Created by HP on 2017/12/22.
@@ -39,6 +40,7 @@ public class TwoFragment extends BaseFragment implements View.OnClickListener {
         inflate.findViewById(R.id.bitmapmesh).setOnClickListener(this);
         inflate.findViewById(R.id.reflect).setOnClickListener(this);
         inflate.findViewById(R.id.roundrectxfermode).setOnClickListener(this);
+        inflate.findViewById(R.id.videoview).setOnClickListener(this);
     }
 
     @Override
@@ -55,10 +57,13 @@ public class TwoFragment extends BaseFragment implements View.OnClickListener {
                 openActivity(getContext(), null, MeshActivity.class);
                 break;
             case R.id.reflect:
-                openActivity(getContext(),null,ReflectActivity.class);
+                openActivity(getContext(), null, ReflectActivity.class);
                 break;
             case R.id.roundrectxfermode:
-                openActivity(getContext(),null,RoundRectXfermodeActivity.class);
+                openActivity(getContext(), null, RoundRectXfermodeActivity.class);
+                break;
+            case R.id.videoview:
+                openActivity(getContext(), null, VideoviewActivity.class);
                 break;
             default:
                 break;
