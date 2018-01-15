@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity
         toolbar.setTitle("UI模型");
         setSupportActionBar(toolbar);
 
-        int[] aa=new int[10];
-        aa[0]=0;
-        Map<String,String> map=new HashMap<>();
+        int[] aa = new int[10];
+        aa[0] = 0;
+        Map<String, String> map = new HashMap<>();
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -75,9 +75,6 @@ public class MainActivity extends AppCompatActivity
                 .beginTransaction()
                 .add(R.id.fly, fragmentList.get(0))
                 .commit();
-
-
-
 
 
         RadioGroup rgp = (RadioGroup) findViewById(R.id.rgp);
