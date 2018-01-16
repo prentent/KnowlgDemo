@@ -39,5 +39,12 @@
         android:background="@drawable/shape_btn"
         android:text="圆角矩形" />
 
+    <Button
+        android:id="@+id/videoview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn"
+        android:text="自带VideroView" />
+
 
 </LinearLayout>
