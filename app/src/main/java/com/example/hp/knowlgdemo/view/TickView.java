@@ -10,9 +10,11 @@ import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 
+import com.example.hp.knowlgdemo.utils.LogUtils;
 import com.example.hp.knowlgdemo.utils.ScreenUtils;
 
 /**
@@ -27,6 +29,7 @@ public class TickView extends View {
     private int currentAngle = 0;
     private int pointRadius;
     private int paintWidth = 0;
+    private boolean isOut;
 
     public TickView(Context context) {
 //        super(context);
@@ -101,30 +104,38 @@ public class TickView extends View {
         paint.setColor(Color.YELLOW);
         paint.setStrokeWidth(10);
         paint.setStyle(Paint.Style.STROKE);
-        if (currentAngle <= 360) {
-            canvas.drawArc(rect, 0, currentAngle, false, paint);
-            currentAngle += 10;
+        currentAngle += 10;
+        if (currentAngle > 360) {
+            currentAngle = 360;
         }
+        canvas.drawArc(rect, 0, currentAngle, false, paint);
         paint.setStyle(Paint.Style.FILL);
-        if (pointRadius >= 0 && currentAngle >= 360) {
+        if (currentAngle == 360) {
             paint.setColor(Color.YELLOW);
             canvas.drawCircle(xPoint, xPoint, xRadius, paint);
             pointRadius -= 5;
+            if (pointRadius < 0) {
+                pointRadius = 0;
+            }
             paint.setColor(Color.WHITE);
             canvas.drawCircle(xPoint, xPoint, pointRadius, paint);
         }
         paint.setColor(Color.YELLOW);
         paint.setStyle(Paint.Style.STROKE);
-        if (paintWidth < 0 && pointRadius <= 0 && currentAngle >= 360) {
-            if (paintWidth <= 45) {
+        if (pointRadius == 0) {
+            if (paintWidth < 75 && !isOut) {
                 paint.setStrokeWidth(paintWidth += 5);
-            } else {
+                if (paintWidth == 75) {
+                    isOut = true;
+                }
+            } else if (paintWidth > 0 && isOut) {
                 paint.setStrokeWidth(paintWidth -= 5);
             }
             canvas.drawArc(rect, 0, 360, false, paint);
         }
 
-        if (paintWidth <= 0) {
+        if (paintWidth != 0 || !isOut) {
+            Log.e("========", "xxxxx");
             postInvalidate();
         }
 
