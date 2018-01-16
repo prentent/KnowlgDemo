@@ -50,8 +50,7 @@
         <activity android:name=".ui.BootSheetActivity" />
         <activity android:name=".ui.BingZhuangActivity" />
         <activity android:name=".ui.ZheXianActivity" />
-        <activity android:name=".ui.TickViewActivity"></activity>
-        <activity android:name=".ui.ZheXianActivity" />
+        <activity android:name=".ui.TickViewActivity"/>
         <activity android:name=".ui.MatricActivity" />
         <activity android:name=".ui.MeshActivity" />
         <activity android:name=".ui.ReflectActivity" />
@@ -59,7 +58,7 @@
         <activity android:name=".ui.VideoviewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            ></activity>
+            />
     </application>
 
 </manifest>

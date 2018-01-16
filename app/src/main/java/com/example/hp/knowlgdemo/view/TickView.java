@@ -27,6 +27,7 @@ public class TickView extends View {
     private int currentAngle = 0;
     private int pointRadius;
     private int paintWidth = 0;
+    private boolean isScale = false;
 
     public TickView(Context context) {
 //        super(context);
@@ -103,31 +104,47 @@ public class TickView extends View {
         paint.setStyle(Paint.Style.STROKE);
         if (currentAngle <= 360) {
             canvas.drawArc(rect, 0, currentAngle, false, paint);
-            currentAngle += 10;
+
+            if (currentAngle > 360) {
+                currentAngle = 360;
+            } else {
+                currentAngle += 10;
+            }
         }
         paint.setStyle(Paint.Style.FILL);
-        if (pointRadius >= 0 && currentAngle >= 360) {
+        if (pointRadius >= 0 && currentAngle > 360) {
+
             paint.setColor(Color.YELLOW);
             canvas.drawCircle(xPoint, xPoint, xRadius, paint);
-            pointRadius -= 5;
+            if (pointRadius == 0) {
+                pointRadius = 5;
+            } else {
+                pointRadius -= 5;
+            }
             paint.setColor(Color.WHITE);
             canvas.drawCircle(xPoint, xPoint, pointRadius, paint);
         }
         paint.setColor(Color.YELLOW);
         paint.setStyle(Paint.Style.STROKE);
-        if (paintWidth < 0 && pointRadius <= 0 && currentAngle >= 360) {
-            if (paintWidth <= 45) {
-                paint.setStrokeWidth(paintWidth += 5);
-            } else {
-                paint.setStrokeWidth(paintWidth -= 5);
+        if (paintWidth >= 0 && pointRadius == 0 && currentAngle > 360) {
+            if (paintWidth <= 45 && !isScale) {
+                paintWidth += 1;
+                paint.setStrokeWidth(paintWidth);
+                if (paintWidth == 45) {
+                    isScale = true;
+                }
+            } else if (isScale) {
+                paintWidth -= 1;
+                paint.setStrokeWidth(paintWidth);
+                if (paintWidth == 0) {
+                    isScale = false;
+                    paintWidth -= 5;
+                }
             }
             canvas.drawArc(rect, 0, 360, false, paint);
         }
-
-        if (paintWidth <= 0) {
+        if (paintWidth >= 0) {
             postInvalidate();
         }
-
-
     }
 }
