@@ -59,9 +59,10 @@
             android:name=".ui.VideoviewActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ui.ObserVableActivity"></activity>
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ui.SwitchActivity"></activity>
+        <activity android:name=".ui.ObserVableActivity" />
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.SwitchActivity" />
+        <activity android:name=".ui.FansheActivity"></activity>
     </application>
 
 </manifest>
