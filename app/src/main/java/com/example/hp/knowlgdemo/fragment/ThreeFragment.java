@@ -13,6 +13,7 @@ import com.example.hp.knowlgdemo.R;
 import com.example.hp.knowlgdemo.ui.AnmaitorActivity;
 import com.example.hp.knowlgdemo.ui.BootSheetActivity;
 import com.example.hp.knowlgdemo.ui.ChaJianActivity;
+import com.example.hp.knowlgdemo.ui.ObserVableActivity;
 import com.example.hp.knowlgdemo.ui.TickViewActivity;
 
 /**
@@ -34,6 +35,7 @@ public class ThreeFragment extends Fragment implements View.OnClickListener {
         inflate.findViewById(R.id.btn_sx).setOnClickListener(this);
         inflate.findViewById(R.id.btn_db).setOnClickListener(this);
         inflate.findViewById(R.id.btn_tick).setOnClickListener(this);
+        inflate.findViewById(R.id.btn_observable).setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +52,9 @@ public class ThreeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_tick:
                 startActivity(new Intent(getContext(), TickViewActivity.class));
+                break;
+            case R.id.btn_observable:
+                startActivity(new Intent(getContext(),ObserVableActivity.class));
                 break;
         }
     }

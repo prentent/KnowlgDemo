@@ -50,15 +50,16 @@
         <activity android:name=".ui.BootSheetActivity" />
         <activity android:name=".ui.BingZhuangActivity" />
         <activity android:name=".ui.ZheXianActivity" />
-        <activity android:name=".ui.TickViewActivity"/>
+        <activity android:name=".ui.TickViewActivity" />
         <activity android:name=".ui.MatricActivity" />
         <activity android:name=".ui.MeshActivity" />
         <activity android:name=".ui.ReflectActivity" />
         <activity android:name=".ui.RoundRectXfermodeActivity" />
-        <activity android:name=".ui.VideoviewActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        <activity
+            android:name=".ui.VideoviewActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.ObserVableActivity"></activity>
     </application>
 
 </manifest>
