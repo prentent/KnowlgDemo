@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.knowlgdemo.ui.SwitchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ToggleButton
+        android:id="@+id/tbtn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOff="关闭声音"
+        android:textOn="打开声音" />
+
+    <Switch
+        android:id="@+id/swh_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff=""
+        android:textOn=""/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20"
+        android:secondaryProgress="50"
+        android:progressDrawable="@drawable/sb_bar"
+        android:thumb="@mipmap/ic_launcher_round"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="6"
+        style="@style/roomRatingBar"
+        android:rating="4"/>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="MM/dd/yy h:mmaa"/>
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="MMM dd, yyyy h:mmaa"/>
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="MMMM dd, yyyy h:mmaa"/>
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="E, MMMM dd, yyyy h:mmaa"/>
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="EEEE, MMMM dd, yyyy h:mmaa"/>
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="Noteworthy day: 'M/d/yy"/>
+
+        <!--android:dial="@mipmap/ic_c_bg"-->
+        <!--android:hand_hour="@mipmap/zhen_shi"-->
+        <!--android:hand_minute="@mipmap/zhen_fen"-->
+        <AnalogClock
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+/>
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textSize="60dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开始记时" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="停止记时" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="重置" />
+
+            <Button
+                android:id="@+id/btn_format"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="格式化" />
+
+        </LinearLayout>
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:datePickerMode="spinner"
+            android:layout_height="wrap_content"/>
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:timePickerMode="clock"
+            android:layout_height="wrap_content"/>
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></CalendarView>
+    </LinearLayout>
+</ScrollView>
